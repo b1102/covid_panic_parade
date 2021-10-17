@@ -13,17 +13,12 @@ for country in countries:
     print("Started processing: {}".format(country))
     coronavirus_entries_counter = 0
     entries_counter = 0
-    
+
     for address in countries.get(country):
         feed = feedparser.parse(address)
         for entry in feed.entries:
-            if "summary" in entry:
-                summary = entry.get("summary").lower()
-                coronavirus_entries_counter = coronavirus_entries_counter + mentions(summary)
-                entries_counter = entries_counter + 1
-
-        if entries_counter == 0:
-            raise ValueError('Feed address {}, provides zero entries'.format(countries.get(country)))
+            entries_counter = entries_counter + 1
+            coronavirus_entries_counter = coronavirus_entries_counter + mentions(entry)
 
     mass_media_impact_index = coronavirus_entries_counter / entries_counter
     mass_media_impact_index_per_country[country] = (mass_media_impact_index, entries_counter)

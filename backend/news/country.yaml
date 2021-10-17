@@ -1,12 +1,15 @@
-united kindom:
-    - http://feeds.bbci.co.uk/news/uk/rss.xml
-    - https://www.dailymail.co.uk/home/index.rss
-    - https://www.telegraph.co.uk/rss.xml
-    - http://www.independent.co.uk/rss
-    - https://www.mirror.co.uk/?service=rss
-    - https://www.thesun.co.uk/feed/
-    - http://feeds.feedburner.com/daily-express-news-showbiz
-    - https://metro.co.uk/feed/
-    - https://www.channel4.com/news/feed
-    - https://www.huffingtonpost.co.uk/feeds/index.xml
-    - https://www.independent.ie/rss/
+india:
+    - https://telanganatoday.com/feed
+    - https://timesofindia.indiatimes.com/rssfeedstopstories.cms?x=1
+    - http://feeds.feedburner.com/NDTV-LatestNews
+    - https://indianexpress.com/feed/
+    - https://www.thehindu.com/news/national/?service=rss
+    - https://www.news18.com/rss/india.xml
+    - https://www.business-standard.com/rss/latest.rss
+    - https://www.dnaindia.com/feeds/india.xml
+    - https://www.deccanchronicle.com/rss_feed/
+    - https://www.financialexpress.com/feed/
+    - https://www.thehindubusinessline.com/?service=rss
+    - https://prod-qt-images.s3.amazonaws.com/production/freepressjournal/feed.xml
+    - https://www.outlookindia.com/rss/home
+    - https://prod-qt-images.s3.amazonaws.com/production/thequint/feed.xml

@@ -6,4 +6,4 @@ def rss_addresses(country):
 
 
 def rss_addresses_per_country():
-    return read_yaml("./news/rss_providers.yaml")
+    return read_yaml("./news/country.yaml")
