@@ -60,7 +60,6 @@ china:
     - http://feeds.bbci.co.uk/news/world/asia/china/rss.xml
     - https://www.ft.com/stream/8b82f4f1-6fdf-4fe1-91db-99cac1802016?format=rss
     - https://list.juwai.com/news?format=rss
-    - http://feeds.beijingbulletin.com/rss/55582c89cb296d4c
 japan:
     - https://www.japantimes.co.jp/feed
     - https://japantoday.com/feed/atom
