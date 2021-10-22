@@ -166,7 +166,3 @@ south korea:
     - http://www.koreatimes.co.kr/www/rss/rss.xml
     - https://en.yna.co.kr/RSS/news.xml
     - http://world.kbs.co.kr/rss/rss_news.htm?lang=e
-brazil:
-    - https://riotimesonline.com/feed/
-    - https://www.brasilwire.com/feed/
-    - https://jornaldebrasilia.com.br/feed/
