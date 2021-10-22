@@ -1,23 +1,4 @@
-france:
-    - https://www.expatica.com/fr/feed/
-    - https://feeds.thelocal.com/rss/fr
-    - https://www.rfi.fr/en/france/rss
-    - https://www.mediapart.fr/articles/feed
-    - https://www.diplomatie.gouv.fr/spip.php?page=backend-fd
-    - https://mondediplo.com/backend
-    - https://theparisnews.com/search/?q=&t=article&l=10&d=&d1=&d2=&s=start_time&sd=desc&c%5B%5D=news&f=rss
-    - https://zimonews.com/feed/
-    - https://www.parisstaronline.com/feed
-    - https://frenchdailynews.com/feed
-    - https://www.myfrenchlife.org/feed/
-    - https://www.francetoday.com/feed/
-    - https://thegoodlifefrance.com/feed/
-    - https://www.lepoint.fr/rss.xml
-    - https://www.france24.com/en/france/rss
-    - https://www.survivefrance.com/posts.rss
-    - https://cdn-parismatch.lanmedia.fr/var/exports/rss/rss.xml
-    - https://www.messynessychic.com/feed/
-    - https://www.frenchentree.com/feed/
-    - https://bonjourparis.com/feed/
-    - https://www.ouiinfrance.com/feed/
-    - http://www.crash.fr/feed/
+brazil:
+    - https://riotimesonline.com/feed/
+    - https://www.brasilwire.com/feed/
+    - https://jornaldebrasilia.com.br/feed/

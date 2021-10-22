@@ -115,3 +115,58 @@ france:
     - https://zimonews.com/feed/
     - https://www.parisstaronline.com/feed
     - https://frenchdailynews.com/feed
+    - https://www.myfrenchlife.org/feed/
+    - https://www.francetoday.com/feed/
+    - https://thegoodlifefrance.com/feed/
+    - https://www.lepoint.fr/rss.xml
+    - https://www.france24.com/en/france/rss
+    - https://www.survivefrance.com/posts.rss
+    - https://cdn-parismatch.lanmedia.fr/var/exports/rss/rss.xml
+    - https://www.messynessychic.com/feed/
+    - https://www.frenchentree.com/feed/
+    - https://bonjourparis.com/feed/
+    - https://www.ouiinfrance.com/feed/
+    - http://www.crash.fr/feed/
+italy:
+    - https://www.ansa.it/sito/ansait_rss.xml
+    - https://www.florencedailynews.com/feed
+    - https://feeds.thelocal.com/rss/es
+    - https://www.florencedailynews.com/feed
+canada:
+    - http://www.vicnews.com/feed/
+    - https://calgarysun.com/feed
+    - https://www.nationalobserver.com/front/rss
+    - https://edmontonsun.com/feed
+    - https://rss.metroland.com/15/article/waterlooregion
+    - https://leaderpost.com/feed
+    - https://feeds.feedblitz.com/thetyee
+    - https://thestarphoenix.com/feed
+    - https://www.cbc.ca/cmlink/rss-topstories
+    - https://www.ctvnews.ca/rss/ctvnews-ca-top-stories-public-rss-1.822009
+    - https://globalnews.ca/feed/
+    - http://www.thestar.com/content/thestar/feed.RSSManagerServlet.topstories.full.rss
+    - https://torontosun.com/feed
+    - http://feeds.feedburner.com/FP_TopStories
+    - https://vancouversun.com/feed?x=1
+    - https://toronto.citynews.ca/feed/
+    - https://www.feedspot.com/infiniterss.php?_src=followbtn&followfeedid=4630055&q=site
+    - https://montrealgazette.com/feed
+    - https://www.macleans.ca/feed/
+    - https://calgaryherald.com/feed
+    - https://ottawacitizen.com/feed
+    - https://www.canadianbusiness.com/feed/
+    - https://www.straight.com/content/rss
+    - https://edmontonjournal.com/feed
+    - https://windsorstar.com/feed
+    - https://theprovince.com/feed
+    - https://o.canada.com/feed
+    - https://www.timescolonist.com/cmlink/bc-rss-1.757
+    - https://ottawasun.com/feed
+south korea:
+    - http://www.koreatimes.co.kr/www/rss/rss.xml
+    - https://en.yna.co.kr/RSS/news.xml
+    - http://world.kbs.co.kr/rss/rss_news.htm?lang=e
+brazil:
+    - https://riotimesonline.com/feed/
+    - https://www.brasilwire.com/feed/
+    - https://jornaldebrasilia.com.br/feed/
