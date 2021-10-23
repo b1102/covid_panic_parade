@@ -1,5 +1,47 @@
 <!doctype html>
 <html lang="en">
+<style>
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+</style>
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -65,12 +107,21 @@
                     <table>
                         <thead>
                         <tr>
-                            <th>Covid mass media chart position</th>
+                            <th>
+                                <div class="tooltip">
+                                    <span class="tooltiptext">Tooltip text</span>
+                                    Covid mass media chart position
+                                </div>
+                            </th>
+
                             <th>
                                 Country name
                             </th>
                             <th>
-                                Covid deaths chats position
+                                <div class="tooltip">
+                                    <span class="tooltiptext">Tooltip text</span>
+                                    Covid deaths chats position
+                                </div>
                             </th>
                             <th>
                                 Covid deaths for the last 7 days, per million
@@ -112,6 +163,7 @@
                                 419
                             </td>
                             <td>
+
                             </td>
                         </tr>
 
@@ -259,12 +311,7 @@
                                 416
                             </td>
                             <td>
-                                <div class="btn_warning">
-                                    <div class="icon">
-                                        <img src="images/warning.svg" alt="warning">
-                                    </div>
-                                    <span>Threat underestimated</span>
-                                </div>
+
                             </td>
                         </tr>
 
