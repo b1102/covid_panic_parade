@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<style>
+
+    .btn_warning, .btn_panic {
+        min-width: 158px;
+        width: 158px;
+        height: 33px;
+        -webkit-box-shadow: inset 0px 0px 19px #1B1211;
+        box-shadow: inset 0px 0px 19px #1B1211;
+        -webkit-border-radius: 40px;
+        border-radius: 40px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 13px;
+        color: #FFFFFF;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: relative;
+        z-index: 5;
+    }
+
+    .btn_warning:after, .btn_panic:after {
+        content: '';
+        width: 150px;
+        height: 25px;
+        background: #C83000;
+        position: absolute;
+        -webkit-border-radius: 40px;
+        border-radius: 40px;
+        z-index: -1;
+    }
+
+    .btn_warning:before, .btn_panic:before {
+        content: '';
+        width: 158px;
+        height: 33px;
+        position: absolute;
+        background: -o-linear-gradient(314deg, #747474 -16.38%, #343434 79.08%);
+        background: linear-gradient(136deg, #747474 -16.38%, #343434 79.08%);
+        top: 0;
+        left: 0;
+        z-index: -3;
+        -webkit-border-radius: 40px;
+        border-radius: 40px;
+    }
+
+    .btn_warning .icon {
+        width: 13px;
+        height: 13px;
+        min-width: 13px;
+        margin-right: 5px;
+    }
+
+    .btn_warning .icon img {
+        width: 100%;
+    }
+
+    .btn_warning:after {
+        background: #FF8A00;
+    }
+
+    .text {
+        height: 72px;
+        padding: 10px 16px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+
+    .list_item {
+        list-style: disc inside none;
+        padding-left: 40px;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Covid panic parade</title>
+
+    <!-- Закрываем от индексации -->
+    <meta name="googlebot" content="noindex, nofollow"/>
+    <meta name="yandex" content="none"/>
+    <meta name="robots" content="noindex, nofollow"/>
+    <!-- Закрываем от индексации end -->
+
+    <meta name="description" content="Covid chart"/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta name="MobileOptimized" content="320"/>
+
+    <link rel="canonical" href="/">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Title">
+    <meta property="og:description" content="Covid chart">
+    <meta property="og:url" content="/">
+    <meta property="og:site_name" content="Title">
+    <meta property="og:image" content="images/favicon.png">
+    <meta name="twitter:description" content="Covid chart">
+    <meta name="twitter:title" content="Title">
+    <meta name="twitter:image" content="images/favicon.png">
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div class="page">
+    <header id="header" class="header">
+        <div class="mw">
+            <div class="right_side">
+                <nav class="nav">
+                    <ul class="main_nav">
+                        <li><a href="index.html">Covid chart</a></li>
+                        <li class="active"><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main">
+            <div class="mw">
+                <span class="text">
+                    Covid panic parade: a project that compares the amount of deaths with fraction of Covid news between
+                    different countries. It does it using 2 parameters:
+                    <ul>
+                        <li class="list_item">fraction of Covid news</li>
+                        <li class="list_item">deaths in the last 7 days/1M pop</li>
+                    </ul>
+               </span>
+                <br/>
+                <span class="text">
+                    Then I used both parameters two form two lists/charts with different sorting. So for every country we have two numbers:
+                    <ul>
+                        <li class="list_item">a position of countries in a list, sorted by a fraction of Covid news as part of all news, let's call it P<sub>news</sub></li>
+                        <li class="list_item">a position of countries in a list, sorted by number of deaths from Covid per 1m people in last 7 days, let's call it P<sub>deaths</sub></li>
+                    </ul>
+                </span>
+
+                <br/>
+                <span class="text">
+                    The assumption is that in an ideal world these two should be around the same for a country, which means
+                    more people are dying from Covid, more news we could expect about it. But sometimes we could have anomalies:
+                </span>
+                <span class="text">
+
+                    <ul>
+                        <li class="list_item"> too much news, compared to the amount of deaths. Criteria: P<sub>news</sub> - P<sub>deaths</sub> ≥ 5
+                                <div class="btn_panic" >
+                                    <div class="icon">
+                                        <img src="images/alarm.svg" alt="alarm">
+                                    </div>
+                                    <span>Panic detected</span>
+                                </div>
+                        </li>
+                        <li class="list_item">
+                            many deaths, but not much news about it. Criteria: P<sub>deaths</sub> - P<sub>news</sub> ≥  5
+                            <div class="btn_warning">
+                                <div class="icon">
+                                    <img src="images/warning.svg" alt="warning">
+                                </div>
+                               <span>Threat underestimated</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <br/>
+                    Both cases are kind of data anomalies and are bad situations, however from different sides.
+                </span>
+
+
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>
+-*
