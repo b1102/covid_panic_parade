@@ -132,6 +132,8 @@ italy:
     - https://www.florencedailynews.com/feed
     - https://feeds.thelocal.com/rss/es
     - https://www.florencedailynews.com/feed
+    - http://www.repubblica.it/rss/homepage/rss2.0.xml?ref=RHFT
+    - https://www.ilsole24ore.com/rss/mondo.xml
 canada:
     - http://www.vicnews.com/feed/
     - https://calgarysun.com/feed
