@@ -87,8 +87,19 @@
     }
 
     .list_item {
-        list-style: disc inside none;
-        padding-left: 40px;
+        padding: 0 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        color: #FFFFFF;
+    }
+
+    table, th, td {
+        padding: 0;
+    }
+
+    table {
+        border-spacing: 0;
     }
 </style>
 <head>
@@ -147,18 +158,41 @@
                 <span class="text">
                     Covid panic parade: a project that compares the amount of deaths with fraction of Covid news between
                     different countries. It does it using 2 parameters:
-                    <ul>
-                        <li class="list_item">fraction of Covid news</li>
-                        <li class="list_item">deaths in the last 7 days/1M pop</li>
-                    </ul>
+                    <table class="list_item">
+                        <tr>
+                            <td class="list_item"><b> &#8226;</b></td>
+                            <td>
+                                fraction of Covid news
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="list_item"><b> &#8226;</b></td>
+                            <td>
+                                deaths in the last 7 days/1M pop
+                            </td>
+
+                        </tr>
+                    </table>
                </span>
                 <br/>
                 <span class="text">
-                    Then I used both parameters two form two lists/charts with different sorting. So for every country we have two numbers:
-                    <ul>
-                        <li class="list_item">a position of countries in a list, sorted by a fraction of Covid news as part of all news, let's call it P<sub>news</sub></li>
-                        <li class="list_item">a position of countries in a list, sorted by number of deaths from Covid per 1m people in last 7 days, let's call it P<sub>deaths</sub></li>
-                    </ul>
+                    Then both parameters are used to form two lists/charts with different sorting. So for every country we have two numbers:
+                    <table class="list_item">
+                    <tr>
+                        <td class="list_item"><b> &#8226;</b></td>
+                        <td>
+                            a position of countries in a list, sorted by a fraction of Covid news as part of all news, let's call it <b>P<sub>news</sub></b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="list_item"><b> &#8226;</b></td>
+                        <td>
+                            a position of countries in a list, sorted by number of deaths from Covid per 1m people in last 7 days, let's call it <b>P<sub>deaths</sub></b>
+                        </td>
+
+                    </tr>
+                </table>
+
                 </span>
 
                 <br/>
@@ -166,28 +200,42 @@
                     The assumption is that in an ideal world these two should be around the same for a country, which means
                     more people are dying from Covid, more news we could expect about it. But sometimes we could have anomalies:
                 </span>
-                <span class="text">
 
-                    <ul>
-                        <li class="list_item"> too much news, compared to the amount of deaths. Criteria: P<sub>news</sub> - P<sub>deaths</sub> ≥ 5
-                                <div class="btn_panic" >
-                                    <div class="icon">
-                                        <img src="images/alarm.svg" alt="alarm">
-                                    </div>
-                                    <span>Panic detected</span>
+
+                <table class="list_item">
+                    <tr>
+                        <td class="list_item"><b> &#8226;</b></td>
+                        <td>
+                            <div class="btn_panic">
+                                <div class="icon">
+                                    <img src="images/alarm.svg" alt="alarm">
                                 </div>
-                        </li>
-                        <li class="list_item">
-                            many deaths, but not much news about it. Criteria: P<sub>deaths</sub> - P<sub>news</sub> ≥  5
+                                <span>Panic detected</span>
+                            </div>
+                        </td>
+                        <td> - too much news, compared to the amount of deaths. Criteria: <b> P<sub>news</sub> - P<sub>deaths</sub> ≥ 5 </b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="list_item"><b> &#8226;</b></td>
+                        <td>
                             <div class="btn_warning">
                                 <div class="icon">
                                     <img src="images/warning.svg" alt="warning">
                                 </div>
-                               <span>Threat underestimated</span>
+                                <span>Threat underestimated</span>
                             </div>
-                        </li>
-                    </ul>
-                    <br/>
+                        </td>
+                        <td> - many deaths, but not much news about it. Criteria: <b> P<sub>deaths</sub> -
+                            P<sub>news</sub> ≥ 5 </b>
+                        </td>
+                    </tr>
+                </table>
+
+                <br/>
+
+                <span class="text">
+
                     Both cases are kind of data anomalies and are bad situations, however from different sides.
                 </span>
 
@@ -198,4 +246,3 @@
 </div>
 </body>
 </html>
--*
