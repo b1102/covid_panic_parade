@@ -1,46 +1,5 @@
 <!doctype html>
 <html lang="en">
-<style>
-    .tooltip {
-        position: relative;
-        display: inline-block;
-    }
-
-    .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 120px;
-        background-color: #555;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px 0;
-        position: absolute;
-        z-index: 1;
-        bottom: 125%;
-        left: 50%;
-        margin-left: -60px;
-        opacity: 0;
-        transition: opacity 0.3s;
-    }
-
-    .tooltip .tooltiptext::after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: #555 transparent transparent transparent;
-    }
-
-    .tooltip:hover .tooltiptext {
-        visibility: visible;
-        opacity: 1;
-    }
-</style>
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -187,7 +146,11 @@
                                     <div class="icon">
                                         <img src="images/alarm.svg" alt="alarm">
                                     </div>
-                                    <span>Panic detected</span>
+                                    <div class="tooltip">
+                                        <span class="tooltiptext">Too many Covid news, see <a
+                                                href="about.html" class="text_no_padding">about</a> page </span>
+                                        Panic detected
+                                    </div>
                                 </div>
                             </td>
                         </tr>
@@ -421,7 +384,11 @@
                                     <div class="icon">
                                         <img src="images/warning.svg" alt="warning">
                                     </div>
-                                    <span>Threat underestimated</span>
+                                    <div class="tooltip">
+                                        <span class="tooltiptext">Covid is underrepresented in news, see <a
+                                                href="about.html" class="text_no_padding">about</a> page </span>
+                                        Threat underestimated
+                                    </div>
                                 </div>
                             </td>
                         </tr>
