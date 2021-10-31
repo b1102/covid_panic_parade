@@ -9,27 +9,25 @@
     }
 
     td {
-        padding: 10px;
-        border-spacing: 0;
         /*border: 1px solid white;*/
     }
 
     .list_item {
-        padding: 0 15px;
-        font-size: 35px;
+        font-size: 25px;
         color: #347deb;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
-    img {
+    .img_main {
         width: 20%;
         float: right;
-        border-radius: 25px;
+        /*border-radius: 25px;*/
     }
 
-    .img_2 {
-        width: 100%;
-        margin: 0 auto;
-        border-radius: 25px;
+    .img_icon {
+        width: 60%;
+        float: left;
     }
 
     span {
@@ -91,7 +89,7 @@
         <div class="main">
             <div class="mw">
 
-                <img src="images/me.jpg" alt="Me">
+                <img class="img_main" src="images/me.jpg" alt="Me">
                 <span class="text"> Hi hi, my name is Sergei (the guy at photo's left &#128540;). I am originally from
                 Russia. Actually was born in USSR, in Leningrad (Saint-Petersburg now). Was born in the country and the city that don't exist anymore. But
                 that this country will exist a bit longer)). I am backend/data engineer in the
@@ -101,25 +99,26 @@
                 </span>
 
                 <div style="padding-top: 150px;padding-left: 25px">
-                    <table class="list_item">
+                    <table class="list_item" style=" border-spacing: 20px; ">
                         <tr>
-                            <td class="list_item" width="10%">
+                            <td class="list_item" style="width: 10%;">
                                 <a href="https://www.linkedin.com/in/sergei-kobiakov-a32390137/">
-                                    <img class="img_2" src="images/in.png" alt="linkedin">
+                                    <img class="img_icon" src="images/in.png" alt="linkedin">
                                 </a>
                             </td>
-                            <td>
-                                <a class="list_item" href="https://www.linkedin.com/in/sergei-kobiakov-a32390137/">my
+                            <td class="list_item">
+                                <a class="list_item" href="https://www.linkedin.com/in/sergei-kobiakov-a32390137/"
+                                   style="vertical-align: center">my
                                     linkedin</a>
                             </td>
                         </tr>
                         <tr>
-                            <td class="list_item" width="10%">
+                            <td class="list_item">
                                 <a href="mailto:sergkobiakovmachines@gmail.com">
-                                    <img class="img_2" src="images/gmail.png" alt="mail">
+                                    <img class="img_icon" src="images/gmail.png" alt="mail">
                                 </a>
                             </td>
-                            <td>
+                            <td class="list_item">
                                 <a class="list_item" href="mailto:sergkobiakovmachines@gmail.com">my gmail</a>
                             </td>
                         </tr>
