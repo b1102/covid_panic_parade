@@ -1,7 +1,15 @@
-italy:
-    - https://www.ansa.it/sito/ansait_rss.xml
-    - https://www.florencedailynews.com/feed
-    - https://feeds.thelocal.com/rss/es
-    - https://www.florencedailynews.com/feed
-    - http://www.repubblica.it/rss/homepage/rss2.0.xml?ref=RHFT
-    - https://www.ilsole24ore.com/rss/mondo.xml
+germany:
+    - https://www.spiegel.de/international/index.rss
+    - http://newsfeed.zeit.de/index
+    - https://www.deutschland.de/en/feed-news/rss.xml
+    - https://munichnow.com/feed/
+    - http://feeds.t-online.de/rss/politik
+    - http://itb-berlin-news.com/feed/
+    - https://rss.dw.com/xml/rss-de-all
+    - https://www.stern.de/feed/standard/all/
+    - https://www.nd-aktuell.de/rss/neues-deutschland.xml
+    - https://www.tagesschau.de/xml/rss2/
+    - https://feeds.thelocal.com/rss/de
+    - https://itb-berlin-news.com/feed/
+    - https://www.auswaertiges-amt.de/static/appdata/include
+    - https://www.iamexpat.de/rss/news-germany/news

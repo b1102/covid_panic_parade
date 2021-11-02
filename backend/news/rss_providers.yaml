@@ -38,7 +38,6 @@ russia:
 germany:
     - https://www.spiegel.de/international/index.rss
     - http://newsfeed.zeit.de/index
-    - https://www.thelocal.de/feeds/rss.php
     - https://www.deutschland.de/en/feed-news/rss.xml
     - https://munichnow.com/feed/
     - http://feeds.t-online.de/rss/politik
@@ -47,6 +46,10 @@ germany:
     - https://www.stern.de/feed/standard/all/
     - https://www.nd-aktuell.de/rss/neues-deutschland.xml
     - https://www.tagesschau.de/xml/rss2/
+    - https://feeds.thelocal.com/rss/de
+    - https://itb-berlin-news.com/feed/
+    - https://www.auswaertiges-amt.de/static/appdata/include
+    - https://www.iamexpat.de/rss/news-germany/news
 china:
     - http://www.ecns.cn/rss/rss.xml
     - https://chinadigitaltimes.net/feed/
