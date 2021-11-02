@@ -1,0 +1,22 @@
+                                <div class="btn_panic">
+                                    <div class="icon">
+                                        <img src="images/alarm.svg" alt="alarm">
+                                    </div>
+                                    <div class="tooltip">
+                                        <span class="tooltiptext">Too many Covid news, see <a
+                                                href="about.html" class="text_no_padding">about</a> page </span>
+                                        Panic detected
+                                    </div>
+                                </div>
+
+
+                                <div class="btn_warning">
+                                    <div class="icon">
+                                        <img src="images/warning.svg" alt="warning">
+                                    </div>
+                                    <div class="tooltip">
+                                        <span class="tooltiptext">Covid is underrepresented in news, see <a
+                                                href="about.html" class="text_no_padding">about</a> page </span>
+                                        Threat underestimated
+                                    </div>
+                                </div>

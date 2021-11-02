@@ -7,3 +7,4 @@ dependencies:
   - feedparser
   - pyyaml
   - requests
+  - beautifulsoup4

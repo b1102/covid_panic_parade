@@ -1,7 +1,6 @@
 import feedparser
 
-from backend.common.utils import sort_mass_media_impact_index, sort_covid_stats
-from backend.covid_stats.covid_stats_reader import covid_stats
+from backend.covid_stats.generate_stats import stats
 from backend.news.data_combiner import combine_data
 from backend.news.rss_providers_addresses_reader import rss_addresses_per_country
 from backend.news.utils import mentions
@@ -27,9 +26,7 @@ for country in countries:
     print("Finished processing: {}".format(country))
     print()
 
-mass_media_impact_index = sort_mass_media_impact_index(mass_media_impact_index_per_country, True)
-covid_stats = sort_covid_stats(covid_stats(), True)
-data = combine_data(mass_media_impact_index, covid_stats)
+data = combine_data(mass_media_impact_index_per_country, stats())
 
 for entry in data:
     print(entry)

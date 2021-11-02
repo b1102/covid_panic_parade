@@ -1,4 +1,4 @@
-usa:
+united states:
     - http://rss.cnn.com/rss/cnn_topstories.rss
     - https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml
     - https://abcnews.go.com/abcnews/topstories
@@ -77,7 +77,7 @@ japan:
     - http://www.nishinippon.co.jp/delivery/rss/flash
     - https://news.livedoor.com/topics/rss/top.xml
     - https://www.fsa.go.jp/fsaEnNewsList_rss2.xml
-united kindom:
+united kingdom:
     - http://feeds.bbci.co.uk/news/uk/rss.xml
     - https://www.dailymail.co.uk/home/index.rss
     - https://www.telegraph.co.uk/rss.xml

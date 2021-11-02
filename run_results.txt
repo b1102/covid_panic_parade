@@ -1,3 +1,4 @@
+31.10.21
 ChartItem(mass_media_chart_position=1, country_name='south korea', fractions_of_covid_news=27.6, covid_stats_chart_position=10, week_deaths_per_million=2, analyzed_news_entries_number=174)
 ChartItem(mass_media_chart_position=2, country_name='canada', fractions_of_covid_news=17.0, covid_stats_chart_position=4, week_deaths_per_million=6, analyzed_news_entries_number=399)
 ChartItem(mass_media_chart_position=3, country_name='germany', fractions_of_covid_news=14.4, covid_stats_chart_position=5, week_deaths_per_million=5, analyzed_news_entries_number=292)
@@ -10,3 +11,17 @@ ChartItem(mass_media_chart_position=9, country_name='usa', fractions_of_covid_ne
 ChartItem(mass_media_chart_position=10, country_name='italy', fractions_of_covid_news=7.9, covid_stats_chart_position=6, week_deaths_per_million=5, analyzed_news_entries_number=354)
 ChartItem(mass_media_chart_position=11, country_name='france', fractions_of_covid_news=6.4, covid_stats_chart_position=9, week_deaths_per_million=3, analyzed_news_entries_number=299)
 ChartItem(mass_media_chart_position=12, country_name='united kindom', fractions_of_covid_news=5.3, covid_stats_chart_position=3, week_deaths_per_million=13, analyzed_news_entries_number=606)
+
+02.11.21
+ChartItem(mass_media_chart_position=1, country_name='germany', fractions_of_covid_news=21.9, covid_stats_chart_position=4, week_deaths_per_million=6.0, analyzed_news_entries_number=210, diff=-3)
+ChartItem(mass_media_chart_position=2, country_name='canada', fractions_of_covid_news=17.8, covid_stats_chart_position=5, week_deaths_per_million=6.0, analyzed_news_entries_number=398, diff=-3)
+ChartItem(mass_media_chart_position=3, country_name='south korea', fractions_of_covid_news=16.2, covid_stats_chart_position=9, week_deaths_per_million=2.0, analyzed_news_entries_number=228, diff=-6)
+ChartItem(mass_media_chart_position=4, country_name='australia', fractions_of_covid_news=13.2, covid_stats_chart_position=6, week_deaths_per_million=4.0, analyzed_news_entries_number=403, diff=-2)
+ChartItem(mass_media_chart_position=5, country_name='china', fractions_of_covid_news=12.7, covid_stats_chart_position=12, week_deaths_per_million=0.0, analyzed_news_entries_number=409, diff=-7)
+ChartItem(mass_media_chart_position=6, country_name='japan', fractions_of_covid_news=11.1, covid_stats_chart_position=11, week_deaths_per_million=0.5, analyzed_news_entries_number=270, diff=-5)
+ChartItem(mass_media_chart_position=7, country_name='united states', fractions_of_covid_news=10.7, covid_stats_chart_position=2, week_deaths_per_million=24.0, analyzed_news_entries_number=413, diff=5)
+ChartItem(mass_media_chart_position=8, country_name='india', fractions_of_covid_news=8.5, covid_stats_chart_position=10, week_deaths_per_million=2.0, analyzed_news_entries_number=909, diff=-2)
+ChartItem(mass_media_chart_position=9, country_name='united kingdom', fractions_of_covid_news=8.1, covid_stats_chart_position=3, week_deaths_per_million=16.0, analyzed_news_entries_number=620, diff=6)
+ChartItem(mass_media_chart_position=10, country_name='italy', fractions_of_covid_news=7.8, covid_stats_chart_position=7, week_deaths_per_million=4.0, analyzed_news_entries_number=398, diff=3)
+ChartItem(mass_media_chart_position=11, country_name='russia', fractions_of_covid_news=7.8, covid_stats_chart_position=1, week_deaths_per_million=55.0, analyzed_news_entries_number=400, diff=10)
+ChartItem(mass_media_chart_position=12, country_name='france', fractions_of_covid_news=6.9, covid_stats_chart_position=8, week_deaths_per_million=3.0, analyzed_news_entries_number=303, diff=4)
