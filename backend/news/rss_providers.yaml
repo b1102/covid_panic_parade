@@ -35,6 +35,11 @@ russia:
     - https://englishrussia.com/feed/
     - https://russianuniverse.org/feed/
     - http://static.feed.rbc.ru/rbc/logical/footer/news.rss
+    - https://lenta.ru/rss/news
+    - https://news.ru/rss/type/post/
+    - https://www.mk.ru/rss/news/index.xml
+    - https://aif.ru/rss/news.php
+    - https://www.vedomosti.ru/rss/news
 germany:
     - https://www.spiegel.de/international/index.rss
     - http://newsfeed.zeit.de/index

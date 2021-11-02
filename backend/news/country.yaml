@@ -1,15 +1,14 @@
-germany:
-    - https://www.spiegel.de/international/index.rss
-    - http://newsfeed.zeit.de/index
-    - https://www.deutschland.de/en/feed-news/rss.xml
-    - https://munichnow.com/feed/
-    - http://feeds.t-online.de/rss/politik
-    - http://itb-berlin-news.com/feed/
-    - https://rss.dw.com/xml/rss-de-all
-    - https://www.stern.de/feed/standard/all/
-    - https://www.nd-aktuell.de/rss/neues-deutschland.xml
-    - https://www.tagesschau.de/xml/rss2/
-    - https://feeds.thelocal.com/rss/de
-    - https://itb-berlin-news.com/feed/
-    - https://www.auswaertiges-amt.de/static/appdata/include
-    - https://www.iamexpat.de/rss/news-germany/news
+russia:
+    - https://www.rt.com/rss/
+    - https://meduza.io/rss2/all
+    - https://russia-insider.com/en/all-content/rss
+    - http://tass.com/rss/v2.xml
+    - https://english.pravda.ru/export.xml
+    - https://englishrussia.com/feed/
+    - https://russianuniverse.org/feed/
+    - http://static.feed.rbc.ru/rbc/logical/footer/news.rss
+    - https://lenta.ru/rss/news
+    - https://news.ru/rss/type/post/
+    - https://www.mk.ru/rss/news/index.xml
+    - https://aif.ru/rss/news.php
+    - https://www.vedomosti.ru/rss/news
