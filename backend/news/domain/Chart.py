@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import List
 
-from backend.news.ChartItem import ChartItem
+from backend.news.domain.ChartItem import ChartItem
 
 
 @dataclass

@@ -1,4 +1,4 @@
-from backend.news.covid_words_reader import covid_words
+from backend.news.mentions.covid_words_reader import covid_words
 
 
 def mentions(entry):

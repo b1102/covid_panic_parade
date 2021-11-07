@@ -1,7 +1,7 @@
 from typing import List
 
 from backend.common.utils import sort_mass_media_impact_index, sort_covid_stats
-from backend.news.ChartItem import ChartItem
+from backend.news.domain.ChartItem import ChartItem
 
 
 def combine_data(mass_media_impact_index_per_country, covid_stats) -> List[ChartItem]:

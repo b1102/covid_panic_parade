@@ -4,14 +4,14 @@ from typing import List
 
 from ruamel import yaml
 
-from backend.news.Chart import Chart
+from backend.news.domain.Chart import Chart
 from datetime import datetime
 
 import boto3
 from bson import ObjectId
 import ruamel.yaml
 
-from backend.news.ChartItem import ChartItem
+from backend.news.domain.ChartItem import ChartItem
 
 
 def write_to_s3(list: List[ChartItem]):
@@ -55,3 +55,17 @@ def write_latest(yaml, chart):
     yaml.dump(chart, buf)
 
     s3.put(Body=buf.getvalue())
+
+
+def read_latest():
+    s3 = boto3.resource('s3').Object(
+        'covid-panic-parade', '/chart/latest/latest.yaml'
+    )
+    yaml = ruamel.yaml.YAML()
+    yaml.register_class(ChartItem)
+    yaml.register_class(Chart)
+    return yaml.load(s3.get()['Body'].read().decode('utf-8'))
+
+
+def fetch_s3_data():
+    return read_latest().chart
