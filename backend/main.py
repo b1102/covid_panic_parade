@@ -1,15 +1,20 @@
+import logging
+
 import feedparser
 
+from backend.common.s3 import write_to_s3
 from backend.covid_stats.generate_stats import stats
 from backend.news.data_combiner import combine_data
 from backend.news.rss_providers_addresses_reader import rss_addresses_per_country
 from backend.news.utils import mentions
 
+logging.basicConfig(level=logging.INFO)
+
 countries = rss_addresses_per_country()
 mass_media_impact_index_per_country = {}
 
 for country in countries:
-    print("Started processing: {}".format(country))
+    logging.info("Started processing: {}".format(country))
     coronavirus_entries_counter = 0
     entries_counter = 0
 
@@ -21,12 +26,13 @@ for country in countries:
 
     mass_media_impact_index = coronavirus_entries_counter / entries_counter
     mass_media_impact_index_per_country[country] = (mass_media_impact_index, entries_counter)
-    print("Covid mass media impact index for {} is {}".format(country, mass_media_impact_index))
-    print("Results are based on analyzing: {} news entries".format(entries_counter))
-    print("Finished processing: {}".format(country))
-    print()
+    logging.info("Covid mass media impact index for {} is {}".format(country, mass_media_impact_index))
+    logging.info("Results are based on analyzing: {} news entries".format(entries_counter))
+    logging.info("Finished processing: {}".format(country))
+    logging.info('_________________________________________________________________________________')
 
 data = combine_data(mass_media_impact_index_per_country, stats())
+write_to_s3(data)
 
 for entry in data:
-    print(entry)
+    logging.info(entry)

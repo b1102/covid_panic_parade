@@ -1,18 +1,7 @@
-from dataclasses import dataclass
 from typing import List
 
 from backend.common.utils import sort_mass_media_impact_index, sort_covid_stats
-
-
-@dataclass
-class ChartItem:
-    mass_media_chart_position: int
-    country_name: str
-    fractions_of_covid_news: float
-    covid_stats_chart_position: int
-    week_deaths_per_million: float
-    analyzed_news_entries_number: int
-    diff: int
+from backend.news.ChartItem import ChartItem
 
 
 def combine_data(mass_media_impact_index_per_country, covid_stats) -> List[ChartItem]:

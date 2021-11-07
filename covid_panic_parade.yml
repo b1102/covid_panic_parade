@@ -8,3 +8,8 @@ dependencies:
   - pyyaml
   - requests
   - beautifulsoup4
+  - flask
+  - jinja2
+  - boto3
+  - bson
+  - ruamel.yaml

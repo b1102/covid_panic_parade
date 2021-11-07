@@ -1,8 +1,11 @@
+import logging
+
 import requests
 from bs4 import BeautifulSoup
 
 
 def stats():
+    logging.info("Getting covid deaths stats")
     request = requests.get('https://www.worldometers.info/coronavirus/weekly-trends/#weekly_table')
     soup = BeautifulSoup(request.content, 'html.parser')
     table = soup.find("table", id="main_table_countries_today")
@@ -15,6 +18,7 @@ def stats():
         weekly_deaths_per_million = float(line.find_all('td')[9].contents[0])
         stats[country] = weekly_deaths_per_million
 
+    logging.info("Covid deaths stats fetched")
     return stats
 
 
