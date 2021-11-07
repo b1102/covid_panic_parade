@@ -4,10 +4,10 @@ import logging
 from backend.common.s3 import fetch_s3_data
 from backend.news.data_fetcher import fetch_new_data
 
-logging.basicConfig(level=logging.INFO)
-
 
 def main():
+    logging.basicConfig(level=logging.INFO)
+
     parser = argparse.ArgumentParser()
     parser.add_argument('--dry_run', type=bool)
     args = parser.parse_args()
