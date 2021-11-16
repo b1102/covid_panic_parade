@@ -5,8 +5,8 @@ import feedparser
 from backend.common.s3 import write_to_s3
 from backend.covid_stats.generate_stats import stats
 from backend.news.data_combiner import combine_data
+from backend.news.mentions.mentions import mentions
 from backend.news.mentions.rss_providers_addresses_reader import rss_addresses_per_country
-from backend.news.mentions import mentions
 
 
 def fetch_new_data():
