@@ -12,20 +12,22 @@ def stats():
     lines = table.find_all('tr')
 
     stats = {}
-    for i in range(8, 211):
-        line = lines[i]
-        country = country_name(line)
-        weekly_deaths_per_million = float(line.find_all('td')[9].contents[0])
+    for line in lines:
+        country, weekly_deaths_per_million = country_deaths(line)
         stats[country] = weekly_deaths_per_million
 
     logging.info("Covid deaths stats fetched")
     return stats
 
 
-def country_name(line):
+def country_deaths(line):
     names_mapping = {"usa": "united states", "uk": "united kingdom", "s. korea": "south korea"}
-    country_name = line.find_all('td')[1].find('a').contents[0].lower()
-    if country_name in names_mapping:
-        return names_mapping[country_name]
-    else:
-        return country_name
+    found = line.find_all('td')[1].find('a')
+    if found:
+        country_name = found.contents[0].lower()
+        value = float(line.find_all('td')[9].contents[0])
+        if country_name in names_mapping:
+            return names_mapping[country_name], value
+        else:
+            return country_name, value
+    return "", 0.0
